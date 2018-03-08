@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ptid_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/help"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/patient_add_margin_left"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ptidtext"
+            android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+            android:layout_toRightOf="@id/ptid_img"
+            android:text="@string/ptid"
+            android:layout_centerVertical="true"
+            android:textColor="#333333"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/ptid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="12"
+            android:hint="ptid"
+            android:layout_margin="10dp"
+            android:padding="20dp" />
+
+        />
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/newptid_img"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/help"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_marginLeft="@dimen/patient_add_margin_left"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/newptidtext"-->
+            <!--android:layout_marginLeft="@dimen/patient_add_margin_left_5"-->
+            <!--android:layout_toRightOf="@id/newptid_img"-->
+            <!--android:text="@string/newptid"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:textColor="#333333"-->
+            <!--android:textStyle="bold" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/newptid"-->
+            <!--android:padding="20dp"-->
+            <!--android:layout_margin="10dp"-->
+            <!--android:hint="newptid"-->
+            <!--android:ems="12"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        <!--/>-->
+
+    <!--</LinearLayout>-->
+
+    <EditText
+        android:id="@+id/sexinput"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sextext"
+            android:layout_marginLeft="@dimen/patient_add_margin_left_37"
+            android:text="@string/sex"
+            android:textColor="#333333"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male" />
+            <RadioButton
+                android:id="@+id/femle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"/>
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:layout_margin="10dp"-->
+        <!--style="@style/h_line_input" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/birthdaytext"
+            android:layout_marginLeft="@dimen/patient_add_margin_left"
+            android:text="@string/birthday"
+            android:textColor="#333333"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/birthday"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:focusableInTouchMode="false"
+            android:hint="birthday"
+            android:ems="12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/countrytext"
+            android:layout_marginLeft="@dimen/patient_add_margin_left"
+            android:text="@string/country"
+            android:layout_centerVertical="true"
+            android:textColor="#333333"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/country"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:focusableInTouchMode="false"
+            android:hint="country"
+            android:ems="12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        />
+
+    </LinearLayout>
+
+</LinearLayout>

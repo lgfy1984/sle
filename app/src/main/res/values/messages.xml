@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 消息 -->
+
+    <string name="back_exit_tips">再按一次返回键退出应用</string>
+
+
+
+    <string name="msg_login_email_null">请输入邮箱</string>
+    <string name="msg_login_pwd_null">请输入密码</string>
+
+    <string name="msg_project_empty_description">暂无项目介绍</string>
+    <string name="notification_empty">没有相关的通知！</string>
+    
+    <string name="img_description">img description</string>
+
+   
+</resources>

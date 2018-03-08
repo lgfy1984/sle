@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 界面内容 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <ScrollView
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:visibility="visible" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_3"
+        android:layout_marginTop="10dip">
+            <TextView
+                android:id="@+id/cbp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_25"
+                style="@style/TitleText"
+                android:text="@string/cbp"/>
+
+            <EditText
+                android:id="@+id/cbp_input"
+                android:ems="10"
+                android:focusableInTouchMode="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_3"
+        >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_25"
+                style="@style/TitleText"
+                android:text="@string/wbc"/>
+
+            <EditText
+                android:id="@+id/wbc_input"
+                android:ems="10"
+                android:hint=""
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+            android:id="@+id/wbc_unit_sb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                style="@style/TitleText" />
+
+            <TextView
+                android:id="@+id/wbc_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:text="@string/unit"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_25"
+                style="@style/TitleText"
+                android:text="@string/plt"/>
+
+            <EditText
+                android:id="@+id/plt_input"
+                android:ems="10"
+                android:hint=""
+                android:inputType="numberDecimal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+            android:id="@+id/plt_unit_sb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                style="@style/TitleText" />
+
+            <TextView
+                android:id="@+id/plt_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TitleText"
+                android:text="@string/unit"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_25"
+                style="@style/TitleText"
+                android:text="@string/anti_ds_dna_ab_date"/>
+
+            <EditText
+                android:id="@+id/anti_ds_dna_ab_input"
+                android:ems="10"
+                android:hint=""
+                android:focusableInTouchMode="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/anti_ds_dna_ab_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/anti_ds_dna_ab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/anti_ds_dna_ab_img"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_centerVertical="true"
+                android:text="@string/anti_ds_dna_ab_value"
+                style="@style/TitleText"  />
+            <Switch
+                android:id="@+id/swh_anti_ds_dna_ab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_3">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/patient_add_margin_left_25"
+            style="@style/TitleText"
+            android:text="@string/complement"/>
+
+        <EditText
+            android:id="@+id/complement_input"
+            android:ems="10"
+            android:hint=""
+            android:focusableInTouchMode="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/complement3_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/complement3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/complement3_img"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_centerVertical="true"
+                android:text="@string/complement3"
+                style="@style/TitleText"  />
+            <Switch
+                android:id="@+id/swh_complement3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/complement4_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/complement4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/complement4_img"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_centerVertical="true"
+                android:text="@string/complement4"
+                style="@style/TitleText"  />
+            <Switch
+                android:id="@+id/swh_complement4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_25"
+                style="@style/TitleText"
+                android:text="@string/urine_microscopy"/>
+
+            <EditText
+                android:id="@+id/urine_microscopy_input"
+                android:ems="10"
+                android:hint=""
+                android:focusableInTouchMode="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cast_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/cast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cast_img"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_centerVertical="true"
+                android:text="@string/cast"
+                style="@style/TitleText"  />
+            <Switch
+                android:id="@+id/swh_cast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/hematuria_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/hematuria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/hematuria_img"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_centerVertical="true"
+                android:text="@string/hematuria"
+                style="@style/TitleText"  />
+            <Switch
+                android:id="@+id/swh_hematuria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/pyuria_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/pyuria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pyuria_img"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_centerVertical="true"
+                android:text="@string/pyuria"
+                style="@style/TitleText"  />
+            <Switch
+                android:id="@+id/swh_pyuria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/proteinuria_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/proteinuria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/proteinuria_img"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_centerVertical="true"
+                android:text="@string/proteinuria"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+            <Switch
+                android:id="@+id/swh_proteinuria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

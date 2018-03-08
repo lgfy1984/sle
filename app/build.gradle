@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId rootProject.ext.applicationId
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    compile 'com.github.huangyanbin:SmartTable:1.8.7'
+    testCompile 'junit:junit:4.12'
+    //noinspection GradleDependency
+    compile 'com.jakewharton:butterknife:6.1.0'
+    //noinspection GradleDependency
+    compile 'com.github.chrisbanes.photoview:library:1.2.3'
+    //noinspection GradleDependency
+    compile 'com.umeng.analytics:analytics:5.5.2'
+    //noinspection GradleCompatible,GradleDependency
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    //noinspection GradleDependency
+    compile 'pub.devrel:easypermissions:0.1.7'
+    compile 'com.kymjs.rxvolley:rxvolley:1.0.7'
+    compile 'com.kymjs.rxvolley:okhttp:1.0.7'
+    compile 'com.kymjs.rxvolley:bitmapcore:1.0.7'
+    //noinspection GradleDependency
+    compile 'com.android.support:design:23.3.0'
+    //noinspection GradleDependency
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+}

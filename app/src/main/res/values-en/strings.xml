@@ -1,0 +1,164 @@
+<resources>
+    <string name="lan_chinese">Chinese</string>
+    <string name="lan_en">English</string>
+    <string name="lan_ja">Japanese</string>
+    <string name="lan_de">German</string>
+    <string name="select_language">Choose a language</string>
+
+    <string name="main_menu_title_myself">my</string>
+    <string name="main_menu_title_language">Language</string>
+    <string name="main_menu_title_password">Password</string>
+    <string name="main_menu_title_setting">Setting</string>
+
+    <string name="login_title">login</string>
+    <string name="login_account_hint">username</string>
+    <string name="login_password_hint">password</string>
+    <string name="login_tips">loging</string>
+    <string name="main_menu_logout">logout</string>
+
+    <string name="main_menu_title_feedback">Feedback</string>
+    <string name="opinion_feedback">advice feedback</string>
+    <string name="modify_pwd">modify password</string>
+    <string name="type_of_the_feedback">feedback type : </string>
+    <string name="program_problem">program error</string>
+    <string name="feature_opinion">Feature Suggestions</string>
+    <string name="please_input_you_opinion">Please input your feedback.</string>
+    <string name="please_screenshot_describe">Screenshot description (optional)</string>
+
+    <string name="about_feedback">Any questions and suggestions welcome feedback via app</string>
+    <string name="about_version">© 2018  SLEDAI all rights reserved</string>
+    <string name="search_hint">search patient</string>
+    <string name="search_pat">patient search</string>
+    <string name="pat_list">pt list</string>
+    <string name="sle_list">SLE disease activity index</string>
+
+    <string name="male">Male</string>
+    <string name="female">Femle</string>
+    <string name="ptid">PT ID:</string>
+    <string name="newptid">NEW PT ID:</string>
+    <string name="sex">Sex:</string>
+    <string name="birthday">Birthday:</string>
+    <string name="country">Country and Region:</string>
+    <string name="sledai2k">SLEDAI-2K:</string>
+    <string name="pwdold">old password:</string>
+    <string name="pwdnew">new password:</string>
+    <string name="pwdnew2">confirm new password:</string>
+
+    <string name="ptid_help">For example
+                                QMH: RH-10-111189(2)
+                                PATIENT ID= QM101111892
+    </string>
+    <!-- 1 -->
+    <string name="seizure">Seizure:</string>
+    <string name="seizure_help">Recent onset seizure. exclude metabolic, infectious or drug cause</string>
+    <!-- 2 -->
+    <string name="psychosis">Psychosis:</string>
+    <string name="psychosis_help">Altered ability to function in normal activity due to severe disturbance in the perception of reality. Include halluciination, incoherence, marked loose associations, impoverished though content, marked illogical thinking, bizarre, disorganized, or catatonic behavior. Exclude uremic or drug causes.</string>
+    <!-- 3 -->
+    <string name="organic_brain_syndrome">Organic brain syndrome:</string>
+    <string name="organic_brain_syndrome_help">Altered mental function with impaired orientation, memory, or other intellectual function with rapid onset and fluctuating clinical features, inability to sustain attention to environment, plus at least 2 of the following:
+        -perceptual disturbance
+        - incoherent speech
+        - insomnia or daytime drowsiness
+        - increased or decreased psychomotor activity
+        Exclude metabolic, infectious or drug causes
+    </string>
+    <!-- 4 -->
+    <string name="visual_disturbance">Visual Disturbance:</string>
+    <string name="visual_disturbance_help">Retinal changes of SLE. Include cytoid bodies, retinal hemorrhages, serous exudate or hemorrhages in the choroid, or optic neuritis. Exclude hypertension, infection or drug causes.
+    </string>
+    <!-- 5 -->
+    <string name="cranial_nerve_disorder">Cranial nerve disorder:</string>
+    <string name="cranial_nerve_disorder_help">Retinal changes of SLE. Include cytoid bodies, retinal hemorrhages, serous exudate or hemorrhages in the choroid, or optic neuritis. Exclude hypertension, infection or drug causes. </string>
+    <!-- 6 -->
+    <string name="lupus_headache">Lupus headache:</string>
+    <string name="lupus_headache_help">Severe, persistent headache; may be migrainous, but must be nonresponsive to narcotic analgesia.
+    </string>
+    <!-- 7 -->
+    <string name="cva">CVA:</string>
+    <string name="cva_help">Severe, persistent headache; may be migrainous, but must be nonresponsive to narcotic analgesia.
+    </string>
+    <!-- 1 -->
+    <string name="fever">Fever:</string>
+    <string name="fever_help">>38 degrees celsius. Exclude infectious cause.</string>
+    <!-- 2 -->
+    <string name="rash">Rash:</string>
+    <string name="rash_help">Inflammatory type rash</string>
+    <!-- 3 -->
+    <string name="alopecia">Alopecia:</string>
+    <string name="alopecia_help">Abnormal, patchy or diffuse loss of hair.</string>
+    <!-- 4 -->
+    <string name="mucosal_mlcers">Mucosal Ulcers:</string>
+    <string name="mucosal_mlcers_help">Oral or nasal ulceration</string>
+    <!-- 5 -->
+    <string name="arthritis">Arthritis:</string>
+    <string name="arthritis_help">≥2 joints with pain and signs of inflammation (ie tenderness, swelling or effusion)</string>
+    <!-- 6 -->
+    <string name="myositis">Myositis:</string>
+    <string name="myositis_help">Proximal muscle aching/weakness, associated with elevated creatinine</string>
+    <!-- 7 -->
+    <string name="vasculitis">Vasculitis:</string>
+    <string name="vasculitis_help">Ulceration, gangrene, tender finger nodules, periungual infarction, splinter hemorrhages, or biopsy/angiogram proof of vasculitis</string>
+    <!-- 8 -->
+    <string name="pleurisy">Pleurisy:</string>
+    <string name="pleurisy_help">Pleuritic chest pain with pleural rub or effusion, or pleural thickening</string>
+    <!-- 9 -->
+    <string name="pericarditis">Pericarditis:</string>
+    <string name="pericarditis_help">Pericardial pain with at least 1 of the following:
+    -rub
+    -effusion
+    -electrocardiographic confirmation
+    -echocardiographic confirmation
+    </string>
+
+    <string name="unit">/L</string>
+    <!-- Blood tests -->
+    <string name="cbp">CBP(Date):</string>
+    <string name="hb">Hb: </string>
+    <string name="wbc">WBC: </string>
+    <string name="plt">PLT: </string>
+    <string name="anti_ds_dna_ab_date">Anti-ds DNA Ab(Date):</string>
+    <string name="anti_ds_dna_ab_value">Anti-ds DNA Ab:</string>
+    <string name="complement">Complement(Date):</string>
+    <string name="complement3">low C3: </string>
+    <string name="complement4">low C4: </string>
+    <string name="urine_microscopy">Urine microscopy (Date): </string>
+    <string name="cast">Cast: </string>
+    <string name="cast_help">Heme-granular or red blood cell casts</string>
+    <string name="hematuria">Hematuria: </string>
+    <string name="hematuria_help">(>5 red blood cells/high power field.
+    Exclude stone, infection, or other cause)</string>
+    <string name="pyuria">Pyuria? </string>
+    <string name="pyuria_help"> >5 white blood cells/high power field.Exclude infection.</string>
+    <string name="proteinuria">Proteinuria?: </string> >
+    <string name="proteinuria_help">0.5 grams/24 hours</string>
+
+
+    <string name="startupdate">start update</string>
+    <string name="clearcache">clear cache</string>
+    <string name="newversioncheck">new version check</string>
+    <string name="about">about</string>
+
+
+    <string name="headinfo">head info</string>
+    <string name="nickname">nick name</string>
+    <string name="jointime">join time</string>
+    <string name="personinfo">person info</string>
+
+    <string name="load_ing">Loading···</string>
+    <string name="load_full">Load all already</string>
+    <string name="enhance_list_header_pull_text">下拉刷新</string>
+    <string name="enhance_list_header_release_text">松开刷新</string>
+    <string name="enhance_list_header_refreshing_text">refresh…</string>
+    <string name="enhance_list_header_refresh_success_text">Refresh success</string>
+    <string name="enhance_list_footer_more_text">Onclick load more</string>
+    <string name="enhance_list_footer_loading_text">Loading…</string>
+    <string name="enhance_list_footer_no_more_text">Load all already</string>
+
+    <string name="msg_input_pid">Please input PID</string>
+    <string name="msg_input_newptid">Please input NEWPTID</string>
+    <string name="msg_input_dna_date">Please input Ab(DATE)</string>
+    <string name="msg_input_comp_date">Please input Complement(DATE)</string>
+    <string name="msg_input_cbp_date">Please input CBP(DATE)</string>
+    <string name="msg_input_urine_date">Please input Microscopy(DATE)</string>
+</resources>

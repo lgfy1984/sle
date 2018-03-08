@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="lan_chinese">简体中文</string>
+	<string name="lan_en">英语</string>
+	<string name="lan_ja">日语</string>
+	<string name="lan_de">德语</string>
+	<string name="select_language">请选择语言</string>
+
+	<string name="app_name">SLE</string>
+
+	<string name="main_menu_login_tips">点击登录</string>
+	<string name="main_menu_title_myself">我的</string>
+    <string name="main_menu_title_language">语言</string>
+    <string name="main_menu_title_password">修改密码</string>
+	<string name="main_menu_title_setting">设置</string>
+
+    <string name="login_title">登录</string>
+    <string name="login_account_hint">用户名</string>
+    <string name="login_password_hint">密码</string>
+	<string name="login_tips">正在登录</string>
+	<string name="main_menu_logout">注销登录</string>
+
+    <string name="avatar">Avatar</string>
+
+    <string name="main_menu_title_feedback">反馈</string>
+	<string name="opinion_feedback">意见反馈</string>
+	<string name="modify_pwd">修改密码</string>
+	<string name="type_of_the_feedback">反馈类型 : </string>
+	<string name="program_problem">程序错误</string>
+	<string name="feature_opinion">功能建议</string>
+	<string name="please_input_you_opinion">请输入你的反馈信息~</string>
+	<string name="please_screenshot_describe">截图描述(可选)</string>
+
+	<string name="about_feedback">任何问题和建议欢迎通过app反馈</string>
+	<string name="about_version">© 2018  版权所有</string>
+	<string name="search_hint">搜索病人</string>
+	<string name="search_pat">病人搜索</string>
+	<string name="pat_list">病人列表</string>
+	<string name="sle_list">sle列表</string>
+
+	<string name="male">男</string>
+	<string name="female">女</string>
+
+	<string name="ptid">PT ID:</string>
+	<string name="newptid">NEW PT ID:</string>
+	<string name="sex">性别:</string>
+	<string name="birthday">生日:</string>
+	<string name="country">国家或地区:</string>
+	<string name="sledai2k">SLEDAI-2K:</string>
+
+	<string name="pwdold">原密码</string>
+	<string name="pwdnew">新密码</string>
+	<string name="pwdnew2">确认新密码</string>
+
+	<string name="ptid_help">For example:
+                                QMH: RH-10-111189(2)
+                                PATIENT ID= QM101111892
+    </string>
+	<!-- 1 -->
+	<string name="seizure">Seizure:</string>
+	<string name="seizure_help">Recent onset seizure. exclude metabolic, infectious or drug cause</string>
+	<!-- 2 -->
+	<string name="psychosis">Psychosis:</string>
+	<string name="psychosis_help">Altered ability to function in normal activity due to severe disturbance in the perception of reality. Include halluciination, incoherence, marked loose associations, impoverished though content, marked illogical thinking, bizarre, disorganized, or catatonic behavior. Exclude uremic or drug causes.</string>
+	<!-- 3 -->
+	<string name="organic_brain_syndrome">Organic brain syndrome:</string>
+	<string name="organic_brain_syndrome_help">Altered mental function with impaired orientation, memory, or other intellectual function with rapid onset and fluctuating clinical features, inability to sustain attention to environment, plus at least 2 of the following:
+        -perceptual disturbance
+        - incoherent speech
+        - insomnia or daytime drowsiness
+        - increased or decreased psychomotor activity
+        Exclude metabolic, infectious or drug causes
+    </string>
+	<!-- 4 -->
+	<string name="visual_disturbance">Visual Disturbance:</string>
+	<string name="visual_disturbance_help">Retinal changes of SLE. Include cytoid bodies, retinal hemorrhages, serous exudate or hemorrhages in the choroid, or optic neuritis. Exclude hypertension, infection or drug causes.
+    </string>
+	<!-- 5 -->
+	<string name="cranial_nerve_disorder">Cranial nerve disorder:</string>
+	<string name="cranial_nerve_disorder_help">Retinal changes of SLE. Include cytoid bodies, retinal hemorrhages, serous exudate or hemorrhages in the choroid, or optic neuritis. Exclude hypertension, infection or drug causes. </string>
+	<!-- 6 -->
+	<string name="lupus_headache">Lupus headache:</string>
+	<string name="lupus_headache_help">Severe, persistent headache; may be migrainous, but must be nonresponsive to narcotic analgesia.
+    </string>
+	<!-- 7 -->
+	<string name="cva">CVA:</string>
+	<string name="cva_help">Severe, persistent headache; may be migrainous, but must be nonresponsive to narcotic analgesia.
+    </string>
+	<!-- 1 -->
+	<string name="fever">Fever:</string>
+	<string name="fever_help">>38 degrees celsius. Exclude infectious cause.</string>
+	<!-- 2 -->
+	<string name="rash">Rash:</string>
+	<string name="rash_help">Inflammatory type rash</string>
+	<!-- 3 -->
+	<string name="alopecia">Alopecia:</string>
+	<string name="alopecia_help">Abnormal, patchy or diffuse loss of hair.</string>
+	<!-- 4 -->
+	<string name="mucosal_mlcers">Mucosal Ulcers:</string>
+	<string name="mucosal_mlcers_help">Oral or nasal ulceration</string>
+	<!-- 5 -->
+	<string name="arthritis">Arthritis:</string>
+	<string name="arthritis_help">≥2 joints with pain and signs of inflammation (ie tenderness, swelling or effusion)</string>
+	<!-- 6 -->
+	<string name="myositis">Myositis:</string>
+	<string name="myositis_help">Proximal muscle aching/weakness, associated with elevated creatinine</string>
+	<!-- 7 -->
+	<string name="vasculitis">Vasculitis:</string>
+	<string name="vasculitis_help">Ulceration, gangrene, tender finger nodules, periungual infarction, splinter hemorrhages, or biopsy/angiogram proof of vasculitis</string>
+	<!-- 8 -->
+	<string name="pleurisy">Pleurisy:</string>
+	<string name="pleurisy_help">Pleuritic chest pain with pleural rub or effusion, or pleural thickening</string>
+	<!-- 9 -->
+	<string name="pericarditis">Pericarditis:</string>
+	<string name="pericarditis_help">Pericardial pain with at least 1 of the following:
+    -rub
+    -effusion
+    -electrocardiographic confirmation
+    -echocardiographic confirmation
+    </string>
+	<string name="unit">/L</string>
+	<!-- Blood tests -->
+	<string name="cbp">CBP(Date):</string>
+	<string name="hb">Hb: </string>
+	<string name="wbc">WBC: </string>
+	<string name="plt">PLT: </string>
+	<string name="anti_ds_dna_ab_date">Anti-ds DNA Ab(Date):</string>
+	<string name="anti_ds_dna_ab_value">Anti-ds DNA Ab:</string>
+	<string name="complement">Complement(Date):</string>
+	<string name="complement3">low C3: </string>
+	<string name="complement4">low C4: </string>
+	<string name="urine_microscopy">Urine microscopy (Date): </string>
+	<string name="cast">Cast: </string>
+	<string name="cast_help">Heme-granular or red blood cell casts</string>
+	<string name="hematuria">Hematuria: </string>
+	<string name="hematuria_help">(>5 red blood cells/high power field.
+    Exclude stone, infection, or other cause)</string>
+	<string name="pyuria">Pyuria? </string>
+	<string name="pyuria_help"> >5 white blood cells/high power field.Exclude infection.</string>
+	<string name="proteinuria">Proteinuria?: </string> >
+	<string name="proteinuria_help">0.5 grams/24 hours</string>
+
+
+	<string name="startupdate">启动检查更新</string>
+	<string name="clearcache">清除缓存</string>
+	<string name="newversioncheck">新版本检测</string>
+	<string name="about">关于</string>
+
+
+	<string name="headinfo">头像</string>
+	<string name="nickname">昵称</string>
+	<string name="jointime">时间</string>
+	<string name="personinfo">介绍</string>
+	<string name="load_ing">加载中···</string>
+	<string name="load_full">已加载全部</string>
+	<string name="enhance_list_header_pull_text">下拉刷新</string>
+	<string name="enhance_list_header_release_text">松开刷新</string>
+	<string name="enhance_list_header_refreshing_text">刷新中…</string>
+	<string name="enhance_list_header_refresh_success_text">刷新成功</string>
+	<string name="enhance_list_footer_more_text">点击加载更多</string>
+	<string name="enhance_list_footer_loading_text">加载中…</string>
+	<string name="enhance_list_footer_no_more_text">已加载全部</string>
+
+
+	<string name="msg_input_pid">请输入PID</string>
+	<string name="msg_input_newptid">请输入NEWPTID</string>
+	<string name="msg_input_dna_date">请输入Ab(DATE)</string>
+	<string name="msg_input_comp_date">请输入Complement(DATE)</string>
+	<string name="msg_input_cbp_date">请输入CBP(DATE)</string>
+	<string name="msg_input_urine_date">请输入Microscopy(DATE)</string>
+</resources>

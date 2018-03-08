@@ -1,0 +1,31 @@
+<resources>
+
+	<!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- text-size -->
+    <dimen name="text_size_20">20.0dip</dimen>
+    <dimen name="text_size_18">18.0dip</dimen>
+    <dimen name="text_size_16">16.0dip</dimen>
+	<dimen name="text_size_15">15.0dip</dimen>
+	<dimen name="text_size_14">14.0dip</dimen>
+    <dimen name="text_size_12">12.0dip</dimen>
+    <dimen name="text_size_10">10.0dip</dimen>
+
+    <dimen name="space_26">26.0dip</dimen>
+    <dimen name="space_18">18.0dip</dimen>
+    <dimen name="space_15">15.0dip</dimen>
+    <dimen name="space_10">10.0dip</dimen>
+    <dimen name="space_5">5.0dip</dimen>
+    <dimen name="space_3">3.0dip</dimen>
+
+    <dimen name="enhance_list_header_release_min_distance">20dp</dimen>
+    <dimen name="patient_add_margin_right">50dp</dimen>
+    <dimen name="patient_add_margin_left">20dp</dimen>
+    <dimen name="patient_add_margin_left_25">27dp</dimen>
+    <dimen name="patient_add_margin_left_37">37dp</dimen>
+    <dimen name="patient_add_margin_left_5">5dp</dimen>
+    <dimen name="popup_height">36.0dip</dimen>
+    <dimen name="popup_head_bt">24.0sp</dimen><!-- 标题栏字体 -->
+    <!-- 列表标题字体 -->
+    <dimen name="popup_list_nr">16.0sp</dimen><!-- 列表内容字体 -->
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:descendantFocusability="beforeDescendants"
+        android:id="@+id/lan_chinese"
+        style="@style/setting_item">
+
+        <TextView
+            android:text="中文"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/gray"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+
+    <LinearLayout
+        android:descendantFocusability="beforeDescendants"
+        android:id="@+id/lan_en"
+        style="@style/setting_item">
+
+        <TextView
+            android:text="english"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/gray"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <LinearLayout
+        android:descendantFocusability="beforeDescendants"
+        android:id="@+id/lan_ja"
+        style="@style/setting_item">
+
+        <TextView
+            android:text="japan"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/gray"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" />
+    <LinearLayout
+        android:descendantFocusability="beforeDescendants"
+        android:id="@+id/lan_de"
+        style="@style/setting_item">
+
+        <TextView
+            android:text="de"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</FrameLayout>

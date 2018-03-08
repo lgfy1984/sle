@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_margin="@dimen/space_15"
+        android:layout_marginTop="30dip">
+            <TextView
+                android:id="@+id/ptid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_25"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:text="@string/ptid"/>
+
+            <TextView
+                android:id="@+id/ptid_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="" />
+
+            <TextView
+                android:id="@+id/sledai2k"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_25"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:text="@string/sledai2k"/>
+            <TextView
+                android:id="@+id/sledai2k_input"
+                android:hint=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.bin.david.form.core.SmartTable
+        android:layout_margin="@dimen/space_15"
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

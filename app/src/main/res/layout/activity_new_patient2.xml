@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:layout_marginTop="20dip">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/seizure_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+        <TextView
+            android:id="@+id/seizure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+            android:layout_toRightOf="@id/seizure_img"
+            android:text="@string/seizure"
+            android:layout_centerVertical="true"
+            style="@style/TitleText" />
+
+        <Switch
+            android:id="@+id/swh_seizure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/patient_add_margin_right"
+            android:showText="true"
+            android:switchMinWidth="20dp"
+            android:textOff="NO"
+            android:textOn="YES"
+            android:thumb="@drawable/patient_selector_t"
+            android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/psychosis_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/psychosis"
+            android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+            android:layout_toRightOf="@id/psychosis_img"
+            android:text="@string/psychosis"
+            android:layout_centerVertical="true"
+            style="@style/TitleText" />
+
+        <Switch
+            android:id="@+id/swh_psychosis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/patient_add_margin_right"
+            android:showText="true"
+            android:switchMinWidth="20dp"
+            android:textOff="NO"
+            android:textOn="YES"
+            android:thumb="@drawable/patient_selector_t"
+            android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/organic_brain_syndrome_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+        <TextView
+            android:id="@+id/organic_brain_syndrome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/organic_brain_syndrome_img"
+            android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+            android:layout_centerVertical="true"
+            android:text="@string/organic_brain_syndrome"
+            style="@style/TitleText" />
+
+        <Switch
+            android:id="@+id/swh_organic_brain_syndrome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/patient_add_margin_right"
+            android:showText="true"
+            android:switchMinWidth="20dp"
+            android:textOff="NO"
+            android:textOn="YES"
+            android:thumb="@drawable/patient_selector_t"
+            android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/visual_disturbance_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+        <TextView
+            android:id="@+id/visual_disturbance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+            android:layout_toRightOf="@id/visual_disturbance_img"
+            android:layout_centerVertical="true"
+            android:text="@string/visual_disturbance"
+            style="@style/TitleText" />
+
+        <Switch
+            android:id="@+id/swh_visual_disturbance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/patient_add_margin_right"
+            android:showText="true"
+            android:switchMinWidth="20dp"
+            android:textOff="NO"
+            android:textOn="YES"
+            android:thumb="@drawable/patient_selector_t"
+            android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical|center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cranial_nerve_disorder_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+        <TextView
+            android:id="@+id/cranial_nerve_disorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cranial_nerve_disorder_img"
+            android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+            android:layout_centerVertical="true"
+            android:text="@string/cranial_nerve_disorder"
+            style="@style/TitleText" />
+
+        <Switch
+            android:id="@+id/swh_cranial_nerve_disorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/patient_add_margin_right"
+            android:showText="true"
+            android:switchMinWidth="20dp"
+            android:textOff="NO"
+            android:textOn="YES"
+            android:thumb="@drawable/patient_selector_t"
+            android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/lupus_headache_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+        <TextView
+            android:id="@+id/lupus_headache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/lupus_headache_img"
+            android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+            android:layout_centerVertical="true"
+            android:text="@string/lupus_headache"
+            style="@style/TitleText" />
+
+        <Switch
+            android:id="@+id/swh_lupus_headache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/patient_add_margin_right"
+            android:showText="true"
+            android:switchMinWidth="20dp"
+            android:textOff="NO"
+            android:textOn="YES"
+            android:thumb="@drawable/patient_selector_t"
+            android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_10"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/cva_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+        <TextView
+            android:id="@+id/cva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cva_img"
+            android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+            android:layout_centerVertical="true"
+            android:text="@string/cva"
+            style="@style/TitleText" />
+        <Switch
+            android:id="@+id/swh_cva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/patient_add_margin_right"
+            android:showText="true"
+            android:switchMinWidth="20dp"
+            android:textOff="NO"
+            android:textOn="YES"
+            android:thumb="@drawable/patient_selector_t"
+            android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

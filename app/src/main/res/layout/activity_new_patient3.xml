@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_5"
+        android:layout_marginTop="20dip">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fever_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/fever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_toRightOf="@id/fever_img"
+                android:text="@string/fever"
+                android:layout_centerVertical="true"
+                style="@style/TitleText"  />
+
+            <Switch
+                android:id="@+id/swh_fever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_5"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/rash_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rash"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_toRightOf="@id/rash_img"
+                android:text="@string/rash"
+                android:layout_centerVertical="true"
+                style="@style/TitleText"  />
+
+            <Switch
+                android:id="@+id/swh_rash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_5"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/alopecia_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/alopecia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_toRightOf="@id/alopecia_img"
+                android:layout_centerVertical="true"
+                android:text="@string/alopecia"
+                style="@style/TitleText"  />
+
+            <Switch
+                android:id="@+id/swh_alopecia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_5"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/mucosal_mlcers_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/mucosal_mlcers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_toRightOf="@id/mucosal_mlcers_img"
+                android:layout_centerVertical="true"
+                android:text="@string/mucosal_mlcers"
+                style="@style/TitleText" />
+
+            <Switch
+                android:id="@+id/swh_mucosal_mlcers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_5"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical|center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/arthritis_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/arthritis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_toRightOf="@id/arthritis_img"
+                android:layout_centerVertical="true"
+                android:text="@string/arthritis"
+                style="@style/TitleText"  />
+
+            <Switch
+                android:id="@+id/swh_arthritis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_5"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/myositis_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/myositis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_toRightOf="@id/myositis_img"
+                android:layout_centerVertical="true"
+                android:text="@string/myositis"
+                style="@style/TitleText"  />
+
+            <Switch
+                android:id="@+id/swh_myositis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_5"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/vasculitis_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/vasculitis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_toRightOf="@id/vasculitis_img"
+                android:layout_centerVertical="true"
+                android:text="@string/vasculitis"
+                style="@style/TitleText"  />
+            <Switch
+                android:id="@+id/swh_vasculitis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_5"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/pleurisy_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/pleurisy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_toRightOf="@id/pleurisy_img"
+                android:layout_centerVertical="true"
+                android:text="@string/pleurisy"
+                style="@style/TitleText"  />
+            <Switch
+                android:id="@+id/swh_pleurisy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_5"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/pericarditis_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/help"
+                android:layout_marginLeft="@dimen/patient_add_margin_left"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/pericarditis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/patient_add_margin_left_5"
+                android:layout_toRightOf="@id/pericarditis_img"
+                android:layout_centerVertical="true"
+                android:text="@string/pericarditis"
+                style="@style/TitleText"  />
+            <Switch
+                android:id="@+id/swh_pericarditis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/patient_add_margin_right"
+                android:showText="true"
+                android:switchMinWidth="20dp"
+                android:textOff="NO"
+                android:textOn="YES"
+                android:thumb="@drawable/patient_selector_t"
+                android:track="@drawable/patient_selector_r" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
