@@ -21,6 +21,7 @@ import android.widget.TextView.OnEditorActionListener;
 import com.kymjs.rxvolley.client.HttpCallback;
 
 import com.qmh.sle.AppContext;
+import com.qmh.sle.AppManager;
 import com.qmh.sle.R;
 import com.qmh.sle.api.AsyncHttpHelp;
 import com.qmh.sle.api.SleApi;
@@ -118,7 +119,7 @@ public class LoginActivity extends BaseActivity
         AppContext.getInstance().saveAccountInfo(CyptoUtils.encode(Contanst.ACCOUNT_EMAIL, email)
                 , CyptoUtils.encode(Contanst.ACCOUNT_PWD, passwd));
 
-        login(email, passwd);
+        login(email.toLowerCase(), passwd);
     }
 
     // 登录验证

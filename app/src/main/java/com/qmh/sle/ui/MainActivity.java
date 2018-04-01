@@ -111,7 +111,6 @@ public class MainActivity extends BaseActivity implements
         sp =mContext.getPatient();
         departid = mContext.getLoginInfo().getDepartid();
         initView(savedInstanceState);
-        AppManager.getAppManager().addActivity(this);
 
         BlueWare.withApplicationToken("A97669647CD7FA558E6076201E5F97B322").start(getApplicationContext());
         MobclickAgent.updateOnlineConfig(this);
@@ -121,9 +120,9 @@ public class MainActivity extends BaseActivity implements
     @Override
     protected void onResume() {
         super.onResume();
-        if (mTitle != null) {
+
             mActionBar.setTitle(TITLES[0]);
-        }
+
         if (mCurrentContentTag != null && mContext != null && mMenu != null) {
             if (mCurrentContentTag.equalsIgnoreCase(CONTENTS[1])) {
                 if (!mContext.isLogin()) {
@@ -132,6 +131,7 @@ public class MainActivity extends BaseActivity implements
                 }
             }
         }
+
     }
 
     private void initView(Bundle savedInstanceState) {

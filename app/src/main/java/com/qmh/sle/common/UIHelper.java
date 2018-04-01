@@ -21,6 +21,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.qmh.sle.AppContext;
+import com.qmh.sle.AppManager;
 import com.qmh.sle.bean.Commit;
 import com.qmh.sle.bean.CommitDiff;
 import com.qmh.sle.bean.Event;

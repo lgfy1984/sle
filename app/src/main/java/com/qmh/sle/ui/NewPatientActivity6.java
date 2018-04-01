@@ -112,7 +112,7 @@ public class NewPatientActivity6 extends BaseActivity implements
 
             }
         }
-        FontStyle fontStyle = new FontStyle(this,10, ContextCompat.getColor(this,R.color.section_border));
+        FontStyle fontStyle = new FontStyle(this,12, ContextCompat.getColor(this,R.color.section_border));
 
         table.getConfig().setColumnTitleStyle(fontStyle);
         table.getConfig().setHorizontalPadding(10);
@@ -124,11 +124,11 @@ public class NewPatientActivity6 extends BaseActivity implements
 
             @Override
             public int getTextColor(Integer integer) {
-                return ContextCompat.getColor(NewPatientActivity6.this,R.color.red);
+                return ContextCompat.getColor(NewPatientActivity6.this,R.color.black);
             }
         });
-        table.getConfig().setVerticalPadding(5);
-        table.getConfig().setHorizontalPadding(5);
+        table.getConfig().setVerticalPadding(2);
+        table.getConfig().setHorizontalPadding(2);
         LineStyle lineStyle = new LineStyle();
         lineStyle.setColor(ContextCompat.getColor(this,android.R.color.transparent));
         table.getConfig().setGridStyle(lineStyle);
@@ -214,73 +214,73 @@ public class NewPatientActivity6 extends BaseActivity implements
                 String temp="                  ";
                 switch (integer){
                     case 1:
-                        temp = "seizure";
+                        temp = getResources().getString(R.string.seizure_chart);
                         break;
                     case 2:
-                        temp = "psychosis";
+                        temp = getResources().getString(R.string.psychosis_chart);
                         break;
                     case 3:
-                        temp = "organic_brain_syndrome";
+                        temp = getResources().getString(R.string.organic_brain_syndrome_chart);
                         break;
                     case 4:
-                        temp = "visual_disturbance";
+                        temp = getResources().getString(R.string.visual_disturbance_chart);
                         break;
                     case 5:
-                        temp = "cranial_nerve_disorder";
+                        temp = getResources().getString(R.string.cranial_nerve_disorder_chart);
                         break;
                     case 6:
-                        temp = "lupus_headache";
+                        temp = getResources().getString(R.string.lupus_headache_chart);
                         break;
                     case 7:
-                        temp = "cva";
+                        temp = getResources().getString(R.string.cva_chart);
                         break;
                     case 8:
-                        temp = "fever";
+                        temp = getResources().getString(R.string.fever_chart);
                         break;
                     case 9:
-                        temp = "rash";
+                        temp = getResources().getString(R.string.rash_chart);
                         break;
                     case 10:
-                        temp = "alopecia";
+                        temp = getResources().getString(R.string.alopecia_chart);
                         break;
                     case 11:
-                        temp = "mucosal_mlcers";
+                        temp = getResources().getString(R.string.mucosal_mlcers_chart);
                         break;
                     case 12:
-                        temp = "arthritis";
+                        temp = getResources().getString(R.string.arthritis_chart);
                         break;
                     case 13:
-                        temp = "myositis";
+                        temp = getResources().getString(R.string.myositis_chart);
                         break;
                     case 14:
-                        temp = "vasculitis";
+                        temp = getResources().getString(R.string.vasculitis_chart);
                         break;
                     case 15:
-                        temp = "pleurisy";
+                        temp = getResources().getString(R.string.pleurisy_chart);
                         break;
                     case 16:
-                        temp = "pericarditis";
+                        temp = getResources().getString(R.string.pericarditis_chart);
                         break;
                     case 17:
-                        temp = "anti_ds_dna_ab";
+                        temp = getResources().getString(R.string.anti_ds_dna_ab_chart);
                         break;
                     case 18:
-                        temp = "low c3";
+                        temp = getResources().getString(R.string.complement3_chart);
                         break;
                     case 19:
-                        temp = "low c4";
+                        temp = getResources().getString(R.string.complement4_chart);
                         break;
                     case 20:
-                        temp = "cast";
+                        temp = getResources().getString(R.string.cast_chart);
                         break;
                     case 21:
-                        temp = "hematuria";
+                        temp = getResources().getString(R.string.hematuria_chart);
                         break;
                     case 22:
-                        temp = "pyuria";
+                        temp = getResources().getString(R.string.pyuria_chart);
                         break;
                     case 23:
-                        temp = "proteinuria";
+                        temp = getResources().getString(R.string.proteinuria_cahrt);
                         break;
                 }
                 return temp;

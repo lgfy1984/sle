@@ -7,6 +7,6 @@
         android:orderInCategory="100"
         android:icon="@drawable/arrow_right"
         android:title="next"
-        app:showAsAction="always|withText" />
+        app:showAsAction="always" />
 
 </menu>

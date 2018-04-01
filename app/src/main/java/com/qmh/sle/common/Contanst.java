@@ -19,7 +19,7 @@ public class Contanst {
 	public static final String PROP_KEY_USERNAME = "user.username";
 	public static final String PROP_KEY_EMAIL = "user.useremail";
 	public static final String PROP_KEY_NAME = "user.name";
-	public static final String PROP_KEY_DEPARTID = "user.departid";
+	public static final String PROP_KEY_UDEPARTID = "user.departid";
 	public static final String PROP_KEY_BIO = "user.bio";// 个人介绍
 	public static final String PROP_KEY_WEIBO = "user.weibo";
 	public static final String PROP_KEY_BLOG = "user.blog";

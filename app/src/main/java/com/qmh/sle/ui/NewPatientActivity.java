@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -68,14 +70,14 @@ import butterknife.OnClick;
  */
 @SuppressWarnings("deprecation")
 public class NewPatientActivity extends BaseActivity implements
-        OnClickListener{
+        OnClickListener, TextWatcher {
 
     @InjectView(R.id.birthday)
     EditText birthday;
     @InjectView(R.id.country)
     EditText country;
     @InjectView(R.id.ptid)
-    TextView ptid;
+    EditText ptid;
 //    @InjectView(R.id.newptid)
 //    TextView newptid;
     @InjectView(R.id.sexinput)
@@ -124,6 +126,8 @@ public class NewPatientActivity extends BaseActivity implements
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(LAYOUT_INFLATER_SERVICE);
         popView = inflater.inflate(R.layout.popup_view, null);
 
+
+        ptid.addTextChangedListener(this);
         Calendar ca = Calendar.getInstance();
         mYear = ca.get(Calendar.YEAR);
         mMonth = ca.get(Calendar.MONTH);
@@ -498,4 +502,22 @@ public class NewPatientActivity extends BaseActivity implements
 
     }
 
+    @Override
+    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+    }
+
+    @Override
+    public void onTextChanged(CharSequence s, int start, int before, int count) {
+        ptid.removeTextChangedListener(this);//解除文字改变事件
+        ptid.setText(s.toString().toUpperCase());//转换
+        ptid.setSelection(s.toString().length());//重新设置光标位置
+        ptid.addTextChangedListener(this);//重新绑
+
+    }
+
+    @Override
+    public void afterTextChanged(Editable s) {
+
+    }
 }

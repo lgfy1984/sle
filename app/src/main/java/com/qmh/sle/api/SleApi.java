@@ -33,7 +33,7 @@ public class SleApi {
 //    public final static String HOST = "172.23.92.18:8080/";
 //    public final static String HOST = "192.168.1.26:8080/";
     public final static String HOST = "47.75.46.74:8080/";
-//    public final static String HOST = "147.8.103.232:8080/";
+//    public final static String HOST = "147.8.218.251:8080/";
     private static final String API_VERSION = "sle/";// API版本
     public final static String HTTP = "http://";
     public final static String BASE_URL = HTTP + HOST + API_VERSION;

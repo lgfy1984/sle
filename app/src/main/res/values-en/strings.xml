@@ -50,12 +50,15 @@
     </string>
     <!-- 1 -->
     <string name="seizure">Seizure:</string>
+    <string name="seizure_chart">Seizure</string>
     <string name="seizure_help">Recent onset seizure. exclude metabolic, infectious or drug cause</string>
     <!-- 2 -->
     <string name="psychosis">Psychosis:</string>
+    <string name="psychosis_chart">Psychosis</string>
     <string name="psychosis_help">Altered ability to function in normal activity due to severe disturbance in the perception of reality. Include halluciination, incoherence, marked loose associations, impoverished though content, marked illogical thinking, bizarre, disorganized, or catatonic behavior. Exclude uremic or drug causes.</string>
     <!-- 3 -->
     <string name="organic_brain_syndrome">Organic brain syndrome:</string>
+    <string name="organic_brain_syndrome_chart">Organic Brain</string>
     <string name="organic_brain_syndrome_help">Altered mental function with impaired orientation, memory, or other intellectual function with rapid onset and fluctuating clinical features, inability to sustain attention to environment, plus at least 2 of the following:
         -perceptual disturbance
         - incoherent speech
@@ -65,52 +68,64 @@
     </string>
     <!-- 4 -->
     <string name="visual_disturbance">Visual Disturbance:</string>
+    <string name="visual_disturbance_chart">Vision</string>
     <string name="visual_disturbance_help">Retinal changes of SLE. Include cytoid bodies, retinal hemorrhages, serous exudate or hemorrhages in the choroid, or optic neuritis. Exclude hypertension, infection or drug causes.
     </string>
     <!-- 5 -->
     <string name="cranial_nerve_disorder">Cranial nerve disorder:</string>
+    <string name="cranial_nerve_disorder_chart">Cranial Nerve</string>
     <string name="cranial_nerve_disorder_help">Retinal changes of SLE. Include cytoid bodies, retinal hemorrhages, serous exudate or hemorrhages in the choroid, or optic neuritis. Exclude hypertension, infection or drug causes. </string>
     <!-- 6 -->
     <string name="lupus_headache">Lupus headache:</string>
+    <string name="lupus_headache_chart">Headache</string>
     <string name="lupus_headache_help">Severe, persistent headache; may be migrainous, but must be nonresponsive to narcotic analgesia.
     </string>
     <!-- 7 -->
     <string name="cva">CVA:</string>
+    <string name="cva_chart">CVA</string>
     <string name="cva_help">Severe, persistent headache; may be migrainous, but must be nonresponsive to narcotic analgesia.
     </string>
     <!-- 1 -->
     <string name="fever">Fever:</string>
+    <string name="fever_chart">Fever</string>
     <string name="fever_help">>38 degrees celsius. Exclude infectious cause.</string>
     <!-- 2 -->
     <string name="rash">Rash:</string>
+    <string name="rash_chart">Rash</string>
     <string name="rash_help">Inflammatory type rash</string>
     <!-- 3 -->
     <string name="alopecia">Alopecia:</string>
+    <string name="alopecia_chart">Alopecia</string>
     <string name="alopecia_help">Abnormal, patchy or diffuse loss of hair.</string>
     <!-- 4 -->
     <string name="mucosal_mlcers">Mucosal Ulcers:</string>
+    <string name="mucosal_mlcers_chart">Ulcers</string>
     <string name="mucosal_mlcers_help">Oral or nasal ulceration</string>
     <!-- 5 -->
     <string name="arthritis">Arthritis:</string>
+    <string name="arthritis_chart">Arthritis</string>
     <string name="arthritis_help">≥2 joints with pain and signs of inflammation (ie tenderness, swelling or effusion)</string>
     <!-- 6 -->
     <string name="myositis">Myositis:</string>
+    <string name="myositis_chart">Myositis</string>
     <string name="myositis_help">Proximal muscle aching/weakness, associated with elevated creatinine</string>
     <!-- 7 -->
     <string name="vasculitis">Vasculitis:</string>
+    <string name="vasculitis_chart">Vasculitis</string>
     <string name="vasculitis_help">Ulceration, gangrene, tender finger nodules, periungual infarction, splinter hemorrhages, or biopsy/angiogram proof of vasculitis</string>
     <!-- 8 -->
     <string name="pleurisy">Pleurisy:</string>
+    <string name="pleurisy_chart">Pleurisy</string>
     <string name="pleurisy_help">Pleuritic chest pain with pleural rub or effusion, or pleural thickening</string>
     <!-- 9 -->
     <string name="pericarditis">Pericarditis:</string>
+    <string name="pericarditis_chart">Pericarditis</string>
     <string name="pericarditis_help">Pericardial pain with at least 1 of the following:
     -rub
     -effusion
     -electrocardiographic confirmation
     -echocardiographic confirmation
     </string>
-
     <string name="unit">/L</string>
     <!-- Blood tests -->
     <string name="cbp">CBP(Date):</string>
@@ -119,18 +134,25 @@
     <string name="plt">PLT: </string>
     <string name="anti_ds_dna_ab_date">Anti-ds DNA Ab(Date):</string>
     <string name="anti_ds_dna_ab_value">Anti-ds DNA Ab:</string>
+    <string name="anti_ds_dna_ab_chart">dsDNA Ab</string>
     <string name="complement">Complement(Date):</string>
     <string name="complement3">low C3: </string>
+    <string name="complement3_chart">Low C3</string>
     <string name="complement4">low C4: </string>
+    <string name="complement4_chart">Low C4</string>
     <string name="urine_microscopy">Urine microscopy (Date): </string>
     <string name="cast">Cast: </string>
+    <string name="cast_chart">Cast</string>
     <string name="cast_help">Heme-granular or red blood cell casts</string>
     <string name="hematuria">Hematuria: </string>
+    <string name="hematuria_chart">Hematuria</string>
     <string name="hematuria_help">(>5 red blood cells/high power field.
     Exclude stone, infection, or other cause)</string>
     <string name="pyuria">Pyuria? </string>
+    <string name="pyuria_chart">Pyuria</string>
     <string name="pyuria_help"> >5 white blood cells/high power field.Exclude infection.</string>
-    <string name="proteinuria">Proteinuria?: </string> >
+    <string name="proteinuria">Proteinuria?: </string>
+    <string name="proteinuria_cahrt">Proteinuria</string>
     <string name="proteinuria_help">0.5 grams/24 hours</string>
 
 

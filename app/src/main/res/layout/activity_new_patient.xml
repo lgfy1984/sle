@@ -15,8 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/help"
-            android:layout_gravity="center"
-            android:layout_marginLeft="@dimen/patient_add_margin_left"/>
+            android:layout_marginLeft="@dimen/patient_add_margin_left_50"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -32,8 +31,8 @@
             android:id="@+id/ptid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="12"
-            android:hint="ptid"
+            android:ems="10"
+            android:hint="PTID"
             android:layout_margin="10dp"
             android:padding="20dp" />
 
@@ -90,20 +89,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="left|center"
+        android:gravity="center"
         android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/sextext"
-            android:layout_marginLeft="@dimen/patient_add_margin_left_37"
+            android:layout_marginRight="@dimen/space_3"
             android:text="@string/sex"
             android:textColor="#333333"
             android:textStyle="bold" />
 
         <RadioGroup
             android:id="@+id/rg"
-            android:paddingLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -138,7 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/birthdaytext"
-            android:layout_marginLeft="@dimen/patient_add_margin_left"
+            android:layout_marginLeft="@dimen/patient_add_margin_left_50"
             android:text="@string/birthday"
             android:textColor="#333333"
             android:textStyle="bold" />
@@ -147,8 +145,8 @@
             android:padding="20dp"
             android:layout_margin="10dp"
             android:focusableInTouchMode="false"
-            android:hint="birthday"
-            android:ems="12"
+            android:hint="Birthday"
+            android:ems="10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -169,7 +167,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/countrytext"
-            android:layout_marginLeft="@dimen/patient_add_margin_left"
             android:text="@string/country"
             android:layout_centerVertical="true"
             android:textColor="#333333"
@@ -180,7 +177,7 @@
             android:layout_margin="10dp"
             android:focusableInTouchMode="false"
             android:hint="country"
-            android:ems="12"
+            android:ems="10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 

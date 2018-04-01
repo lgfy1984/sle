@@ -1,6 +1,5 @@
 package com.qmh.sle.ui;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -18,6 +17,7 @@ import android.widget.TextView;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.components.AxisBase;
+import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
@@ -25,7 +25,6 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
 import com.github.mikephil.charting.data.LineDataSet;
 import com.github.mikephil.charting.formatter.IAxisValueFormatter;
-import com.github.mikephil.charting.renderer.XAxisRenderer;
 import com.kymjs.rxvolley.client.HttpCallback;
 import com.qmh.sle.AppContext;
 import com.qmh.sle.R;
@@ -133,8 +132,12 @@ public class NewPatientActivity5 extends BaseActivity implements
                         e.printStackTrace();
                     }
                     initView();
-
-                    mChart.getDescription().setEnabled(false);
+                    Description description =new Description();
+                    description.setText("SLEDAI-2K");
+                    description.setTextSize(12);
+                    description.setEnabled(true);
+                    description.setPosition(300,40);
+                    mChart.setDescription(description);
 
                     // enable touch gestures
                     mChart.setTouchEnabled(true);
@@ -165,10 +168,8 @@ public class NewPatientActivity5 extends BaseActivity implements
                     // modify the legend ...
                     l.setForm(Legend.LegendForm.LINE);
                     l.setTypeface(mTfLight);
-
                     l.setTextSize(11f);
                     l.setTextColor(Color.BLACK);
-                    l.setPosition(Legend.LegendPosition.BELOW_CHART_CENTER);
                     l.setVerticalAlignment(Legend.LegendVerticalAlignment.BOTTOM);
                     l.setHorizontalAlignment(Legend.LegendHorizontalAlignment.LEFT);
                     l.setOrientation(Legend.LegendOrientation.HORIZONTAL);
@@ -181,6 +182,7 @@ public class NewPatientActivity5 extends BaseActivity implements
 //                    xAxis.setGranularity(1);
                     xAxis.setTextColor(Color.BLACK);
                     xAxis.setDrawGridLines(true);
+                    xAxis.enableGridDashedLine(4,4,0);
                     xAxis.setDrawAxisLine(false);
                     xAxis.setAxisMinimum(1);
                     xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);//设置x轴的显示位置
@@ -206,6 +208,7 @@ public class NewPatientActivity5 extends BaseActivity implements
                     leftAxis.setTextColor(Color.BLACK);
                     leftAxis.setAxisMaximum(100f);
                     leftAxis.setAxisMinimum(0f);
+                    leftAxis.enableGridDashedLine(4,4,0);
                     leftAxis.setDrawGridLines(true);
                     leftAxis.setGranularityEnabled(true);
 
@@ -292,7 +295,7 @@ public class NewPatientActivity5 extends BaseActivity implements
                         }
                     }
                     if (cif) {
-                        yVals1.add(new Entry(i+1, 0, sdft.format(temp)));
+                        yVals1.add(new Entry(i+1, 0, ""));
                     }
                 }
 

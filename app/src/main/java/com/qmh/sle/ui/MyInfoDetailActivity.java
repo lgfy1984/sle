@@ -13,6 +13,7 @@ import com.bumptech.glide.Glide;
 import com.kymjs.rxvolley.client.HttpCallback;
 
 import com.qmh.sle.AppContext;
+import com.qmh.sle.AppManager;
 import com.qmh.sle.R;
 import com.qmh.sle.api.SleApi;
 import com.qmh.sle.bean.UpLoadFile;
@@ -234,7 +235,8 @@ public class MyInfoDetailActivity extends BaseActivity implements View.OnClickLi
     private void loginOut() {
         AppContext.getInstance().logout();
         BroadcastController.sendUserChangeBroadcase(AppContext.getInstance());
-        this.finish();
         UIHelper.showLoginActivity(this);
+        AppManager.getAppManager().finishActivity(MainActivity.class);
+        this.finish();
     }
 }

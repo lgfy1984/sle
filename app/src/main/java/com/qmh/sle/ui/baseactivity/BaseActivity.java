@@ -88,7 +88,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     public void changeAppLanguage() {
         String sta =Store.getLanguageLocal(mContext);//这是SharedPreferences工具类，用于保存设置，代码很简单，自己实现吧
         if (StringUtils.isEmpty(sta)){
-             sta="zh_CN";
+             sta="en-US";
         }
         // 本地语言设置
         Locale myLocale = new Locale(sta);

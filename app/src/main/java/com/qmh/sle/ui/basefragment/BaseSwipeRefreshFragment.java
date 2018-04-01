@@ -304,6 +304,6 @@ public abstract class BaseSwipeRefreshFragment<T>
     }
 
     protected String getEmptyTip() {
-        return "暂无数据";
+        return "no data";
     }
 }

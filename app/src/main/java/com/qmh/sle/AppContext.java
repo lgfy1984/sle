@@ -10,6 +10,7 @@ import com.kymjs.rxvolley.RxVolley;
 import com.kymjs.rxvolley.http.RequestQueue;
 import com.qmh.sle.bean.SPatient;
 import com.qmh.sle.bean.SPatientD;
+import com.qmh.sle.ui.MainActivity;
 import com.squareup.okhttp.OkHttpClient;
 
 import com.qmh.sle.api.AsyncHttpHelp;
@@ -37,7 +38,6 @@ import static com.qmh.sle.common.Contanst.PROP_KEY_CAN_CREATE_TEAM;
 import static com.qmh.sle.common.Contanst.PROP_KEY_COMPLEMENT;
 import static com.qmh.sle.common.Contanst.PROP_KEY_COUNTRYID;
 import static com.qmh.sle.common.Contanst.PROP_KEY_CREATED_AT;
-import static com.qmh.sle.common.Contanst.PROP_KEY_DEPARTID;
 import static com.qmh.sle.common.Contanst.PROP_KEY_EMAIL;
 import static com.qmh.sle.common.Contanst.PROP_KEY_IS_ADMIN;
 import static com.qmh.sle.common.Contanst.PROP_KEY_NAME;
@@ -96,6 +96,7 @@ import static com.qmh.sle.common.Contanst.PROP_KEY_SEXID;
 import static com.qmh.sle.common.Contanst.PROP_KEY_SPTID;
 import static com.qmh.sle.common.Contanst.PROP_KEY_STATE;
 import static com.qmh.sle.common.Contanst.PROP_KEY_THEME_ID;
+import static com.qmh.sle.common.Contanst.PROP_KEY_UDEPARTID;
 import static com.qmh.sle.common.Contanst.PROP_KEY_UID;
 import static com.qmh.sle.common.Contanst.PROP_KEY_USERNAME;
 import static com.qmh.sle.common.Contanst.PROP_KEY_WEIBO;
@@ -307,7 +308,7 @@ public class AppContext extends Application {
         user.setId(getProperty(PROP_KEY_UID));
         user.setUsername(getProperty(PROP_KEY_USERNAME));
         user.setRealname(getProperty(PROP_KEY_NAME));
-        user.setDepartid(getProperty(PROP_KEY_DEPARTID));
+        user.setDepartid(getProperty(PROP_KEY_UDEPARTID));
         user.setStatus(StringUtils.toInt(getProperty(PROP_KEY_STATE)));
 
 
@@ -339,7 +340,7 @@ public class AppContext extends Application {
                 setProperty(PROP_KEY_USERNAME, String.valueOf(user.getUsername()));
                 setProperty(PROP_KEY_NAME, String.valueOf(user.getRealname()));
                 setProperty(PROP_KEY_STATE, String.valueOf(user.getStatus()));
-                setProperty(PROP_KEY_DEPARTID, String.valueOf(user.getDepartid()));
+                setProperty(PROP_KEY_UDEPARTID, String.valueOf(user.getDepartid()));
 
             }
         });
@@ -482,11 +483,12 @@ public class AppContext extends Application {
         this.login = false;
         removeProperty(PROP_KEY_PRIVATE_TOKEN, PROP_KEY_UID, PROP_KEY_USERNAME, PROP_KEY_EMAIL,
                 PROP_KEY_NAME, PROP_KEY_BIO, PROP_KEY_WEIBO, PROP_KEY_BLOG,
-                PROP_KEY_THEME_ID, PROP_KEY_STATE, PROP_KEY_CREATED_AT,
+                PROP_KEY_THEME_ID, PROP_KEY_STATE, PROP_KEY_CREATED_AT,PROP_KEY_UDEPARTID,
                 PROP_KEY_PORTRAIT, PROP_KEY_IS_ADMIN,
                 PROP_KEY_CAN_CREATE_GROUP, PROP_KEY_CAN_CREATE_PROJECT,
                 PROP_KEY_CAN_CREATE_TEAM, ROP_KEY_FOLLOWERS, ROP_KEY_STARRED,
-                ROP_KEY_FOLLOWING, ROP_KEY_WATCHED);
+                ROP_KEY_FOLLOWING, ROP_KEY_WATCHED,PROP_KEY_PDLIST);
+
     }
 
     /**
@@ -509,6 +511,7 @@ public class AppContext extends Application {
     public void logout() {
         // 清除已登录用户的信息
         cleanLoginInfo();
+        clearPatientD();
         this.login = false;
         this.loginUid = 0;
         // 发送广播通知
